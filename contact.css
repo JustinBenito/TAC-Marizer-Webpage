@@ -1,0 +1,403 @@
+@keyframes shadow-drop-bottom {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  to {
+    box-shadow: 0 12px 20px -12px rgb(0 0 0/35%);
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+body {
+  margin: 0;
+  line-height: normal;
+}
+.vector-icon9 {
+  position: relative;
+  width: 214.74px;
+  height: 39px;
+  flex-shrink: 0;
+}
+.logo2,
+.vector-container {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.vector-container {
+  align-self: stretch;
+  height: 69px;
+  padding: var(--padding-4xs);
+}
+.logo2 {
+  width: 289px;
+  height: 77px;
+  padding: var(--padding-3xs) 0 0;
+}
+.icon-child1,
+.icon-child2,
+.rectangle-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-darkslategray);
+  width: 12px;
+  height: 2px;
+}
+.icon-child1,
+.icon-child2 {
+  top: 3px;
+}
+.icon-child2 {
+  top: 6px;
+}
+.contact2,
+.home2,
+.icon1,
+.tac-marizer1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+}
+.icon1 {
+  width: 12px;
+  height: 8px;
+  flex-shrink: 0;
+  display: none;
+}
+.contact2,
+.home2,
+.tac-marizer1 {
+  font-size: var(--font-size-base);
+  font-family: var(--font-roboto);
+  text-align: left;
+  display: inline-block;
+}
+.home2 {
+  color: var(--color-darkorchid);
+  width: 35.13px;
+  height: 11.96px;
+  flex-shrink: 0;
+}
+.contact2,
+.tac-marizer1 {
+  color: var(--color-white);
+}
+.contact2 {
+  width: 38px;
+  height: 12px;
+  flex-shrink: 0;
+}
+.nav-items1 {
+  gap: var(--gap-md);
+}
+.nav-items1,
+.navigation-right1,
+.top-container1,
+.top-header1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.top-container1,
+.top-header1 {
+  width: 1070px;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.top-header1 {
+  background-color: #000000;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 51px;
+  padding: var(--padding-xs) var(--padding-2xl) var(--padding-xs)
+    var(--padding-3xl);
+  box-sizing: border-box;
+  justify-content: center;
+  top: 0;
+  background: rgb(0, 0, 0);
+}
+.vector-icon10 {
+  position: relative;
+  width: 481px;
+  height: 79px;
+  flex-shrink: 0;
+}
+.info4 {
+  height: 131px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.icons8-linkedin-144-1 {
+  position: absolute;
+  top: 0;
+  left: -4px;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+.justin-benito {
+  position: absolute;
+  top: 40.61px;
+  left: 262px;
+  font-weight: 500;
+}
+.icons8-linkedin-144-1-parent {
+  position: relative;
+  width: 451px;
+  height: 112px;
+  flex-shrink: 0;
+}
+.mail {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.icons8-linkedin-144-2 {
+  position: absolute;
+  top: 0;
+  left: -4px;
+  width: 98px;
+  height: 120px;
+  object-fit: cover;
+}
+.rajeswari {
+  text-decoration: none;
+  position: absolute;
+  top: 36.79px;
+  left: 110px;
+  font-weight: 500;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 425px;
+}
+.icons8-linkedin-144-2-parent {
+  position: relative;
+  width: 535px;
+  height: 112px;
+  flex-shrink: 0;
+}
+.linkedin,
+.mail-parent {
+  align-self: stretch;
+  display: flex;
+}
+.linkedin {
+  flex-direction: row;
+  padding: 0 var(--padding-xl) 0 var(--padding-2xs);
+  align-items: center;
+  justify-content: flex-start;
+}
+.mail-parent {
+  height: 371.79px;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.jayavarshini {
+  position: absolute;
+  top: 46.5px;
+  left: 217px;
+  font-weight: 500;
+}
+.icons8-linkedin-144-1-group {
+  position: relative;
+  width: 402px;
+  height: 112px;
+  flex-shrink: 0;
+}
+.contact1,
+.contact3,
+.safari {
+  display: flex;
+  align-items: center;
+}
+.safari {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.contact1,
+.contact3 {
+  flex-direction: column;
+}
+.contact3 {
+  border-radius: var(--br-md);
+  width: 986px;
+  padding: 22px var(--padding-4xs);
+  box-sizing: border-box;
+  justify-content: center;
+  gap: var(--gap-sm);
+  background-image: url(./public/contact@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  opacity: 1;
+}
+.contact3.animate {
+  animation: 1s ease 0s 1 normal forwards shadow-drop-bottom;
+}
+.contact1 {
+  position: relative;
+  background-color: var(--color-black);
+  width: 100%;
+  height: 888px;
+  justify-content: flex-start;
+  gap: 61px;
+  text-align: center;
+  font-size: var(--font-size-4xl);
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 1200px) {
+  .top-container1 {
+    width: 80%;
+    flex-direction: column;
+  }
+  .top-header1 {
+    padding-left: var(--padding-md);
+    padding-right: var(--padding-md);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 768px) {
+  .icon1 {
+    display: flex;
+  }
+  .nav-items1 {
+    display: none;
+  }
+  .top-container1 {
+    display: flex;
+    width: 20%;
+  }
+  .top-header1 {
+    padding-left: var(--padding-sm);
+    padding-right: var(--padding-sm);
+    box-sizing: border-box;
+  }
+  .icons8-linkedin-144-1-parent,
+  .mail {
+    width: 80%;
+  }
+  .mail-parent {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .navigation-right1 {
+    display: flex;
+  }
+  .icons8-linkedin-144-1-parent {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 630px) {
+  .jayavarshini,
+  .justin-benito,
+  .rajeswari {
+    font-size: var(--font-size-lg);
+  }
+}
+@media screen and (max-width: 460px) {
+  .contact3 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .jayavarshini,
+  .justin-benito,
+  .rajeswari {
+    font-size: var(--font-size-xl);
+  }
+  .contact3 {
+    width: 100%;
+  }
+}
+.popup-overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.contact5,
+.home4,
+.spottube1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  font-size: var(--font-size-base);
+  font-family: var(--font-roboto);
+  color: var(--color-darkorchid);
+  text-align: left;
+  display: inline-block;
+  width: 29px;
+  height: 12px;
+  flex-shrink: 0;
+}
+.contact5,
+.spottube1 {
+  color: var(--color-white);
+  width: 44px;
+}
+.contact5 {
+  width: 37px;
+}
+.drawer,
+.drawer-items {
+  display: flex;
+  padding: var(--padding-4xs);
+  box-sizing: border-box;
+  align-items: center;
+}
+.drawer-items {
+  flex: 1;
+  height: 192px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.drawer {
+  position: relative;
+  background-color: var(--color-black);
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  opacity: 0;
+  max-height: 90%;
+  overflow: auto;
+}
+.drawer.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-top;
+}
+@media screen and (max-width: 768px) {
+  .drawer {
+    width: 100%;
+  }
+}

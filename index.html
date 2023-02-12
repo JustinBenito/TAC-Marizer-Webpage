@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="home">
+      <div class="top-header">
+        <header class="top-container" id="nav">
+          <div class="logo" id="logo">
+            <div class="vector-wrapper">
+              <img class="vector-icon" alt="" src="public/vector.svg" />
+            </div>
+          </div>
+          <button class="icon" autofocus id="icon">
+            <div class="icon-child"></div>
+            <div class="icon-item"></div>
+            <div class="icon-inner"></div>
+          </button>
+          <div class="navigation-right">
+            <div class="nav-items">
+              <button class="home1" autofocus>Home</button
+              ><button class="tac-marizer" autofocus id="tACMarizer">
+                TAC-Marizer</button
+              ><button class="contact" autofocus id="contact">Contact</button>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="manage-top">
+        <div class="info">
+          <img class="vector-icon1" alt="" src="public/vector1.svg" />
+        </div>
+        <div class="info1">
+          <div class="logo1" data-animate-on-scroll>
+            <img class="vector-icon2" alt="" src="public/vector2.svg" /><img
+              class="vector-icon3"
+              alt=""
+              src="public/vector3.svg"
+            /><img class="vector-icon4" alt="" src="public/vector4.svg" /><img
+              class="vector-icon5"
+              alt=""
+              src="public/vector5.svg"
+            /><img class="vector-icon6" alt="" src="public/vector6.svg" /><img
+              class="vector-icon7"
+              alt=""
+              src="public/vector7.svg"
+            /><img class="vector-icon8" alt="" src="public/vector8.svg" />
+          </div>
+          <h1 class="title1"></h1>
+          <div class="title2">
+            <h1 class="title21" data-animate-on-scroll>
+              <p class="long-terms-and">Long Terms and Conditions?</p>
+              <p class="we-got-you">We got you covered!</p>
+            </h1>
+          </div>
+          <h1 class="title3">
+            <b class="title31">Complex Text to Simple Points</b>
+          </h1>
+          <button
+            class="lets-go-btn"
+            autofocus
+            id="letsGoBtn"
+            data-animate-on-scroll
+            onclick="goto()"
+          >
+            <b class="lets-summarize">Lets Summarize</b>
+          </button>
+        </div>
+      </div>
+      <section class="info2">
+        <div class="image-padlock-parent" data-animate-on-scroll>
+          <img
+            class="image-padlock-icon"
+            alt=""
+            src="public/imagepadlock@1x.png"
+          />
+          <div class="info3">
+            <h1 class="text-wrapper">
+              <h1 class="text">
+                <span class="text-txt"
+                  ><p class="long-terms-and">Long TAC?</p>
+                  <p class="we-got-you">Use our Extension</p></span
+                >
+              </h1>
+            </h1>
+            <div class="button-manage">
+              <button class="get-the-web" autofocus onclick="getit()">
+                Get the Web Extension
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="drawer" class="popup-overlay" style="display: none">
+      <div class="drawer" data-animate-on-scroll>
+        <div class="drawer-items" id="drawer">
+          <button class="home4" autofocus id="drawerhome">Home</button
+          ><button class="spottube1" autofocus id="drawerspottube">
+            Spottube</button
+          ><button class="contact5" autofocus id="drawercontact">
+            Contact
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function getit(){
+        window.location.href="https://github.com/JustinBenito/Terms-and-Conditions-Summarizer"
+      }
+      function goto(){
+        window.location.href = "/spottube.html";
+      }
+      var drawerhome = document.getElementById("drawerhome");
+      if (drawerhome) {
+        drawerhome.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      
+      var drawerspottube = document.getElementById("drawerspottube");
+      if (drawerspottube) {
+        drawerspottube.addEventListener("click", function (e) {
+          window.location.href = "./spottube.html";
+        });
+      }
+      
+      var drawercontact = document.getElementById("drawercontact");
+      if (drawercontact) {
+        drawercontact.addEventListener("click", function (e) {
+          window.location.href = "./contact.html";
+        });
+      }
+      
+      var icon = document.getElementById("icon");
+      if (icon) {
+        icon.addEventListener("click", function () {
+          var drawerOverlay = document.getElementById("drawer");
+          if (!drawerOverlay) return;
+          var drawerOverlayStyle = drawerOverlay.style;
+          if (drawerOverlayStyle) {
+            drawerOverlayStyle.display = "flex";
+            drawerOverlayStyle.zIndex = 99;
+            drawerOverlayStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            drawerOverlayStyle.alignItems = "center";
+            drawerOverlayStyle.justifyContent = "";
+          }
+          drawerOverlay.setAttribute("closable", "");
+      
+          var onClick =
+            drawerOverlay.onClick ||
+            function (e) {
+              if (
+                e.target === drawerOverlay &&
+                drawerOverlay.hasAttribute("closable")
+              ) {
+                drawerOverlayStyle.display = "none";
+              }
+            };
+          drawerOverlay.addEventListener("click", onClick);
+        });
+      }
+      
+      var tACMarizer = document.getElementById("tACMarizer");
+      if (tACMarizer) {
+        tACMarizer.addEventListener("click", function (e) {
+          window.location.href = "./spottube.html";
+        });
+      }
+      
+      var contact = document.getElementById("contact");
+      if (contact) {
+        contact.addEventListener("click", function (e) {
+          window.location.href = "./contact.html";
+        });
+      }
+      
+      var letsGoBtn = document.getElementById("letsGoBtn");
+      if (letsGoBtn) {
+        letsGoBtn.addEventListener("click", function (e) {
+          window.location.href = "./spottube.html";
+        });
+      }
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>

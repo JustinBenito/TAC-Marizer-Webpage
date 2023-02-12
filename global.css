@@ -1,0 +1,140 @@
+:root {
+  /* fonts */
+  --font-poppins: Poppins;
+  --font-roboto: Roboto;
+  --font-nunito: Nunito;
+
+  /* font sizes */
+  --font-size-base: 10.47px;
+  --font-size-lg: 14px;
+  --font-size-xl: 16px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 32px;
+
+  /* Colors */
+  --color-black: #000;
+  --color-gray: #181818;
+  --color-darkorchid: #c021ce;
+  --color-white: #fff;
+  --color-darkslategray: #424242;
+
+  /* Gaps */
+  --gap-sm: 10px;
+  --gap-md: 22.43px;
+
+  /* Paddings */
+  --padding-4xs: 10px;
+  --padding-3xs: 11px;
+  --padding-2xs: 12px;
+  --padding-xs: 16.445871353149414px;
+  --padding-sm: 24px;
+  --padding-md: 40px;
+  --padding-lg: 50px;
+  --padding-xl: 51px;
+  --padding-2xl: 59.803165435791016px;
+  --padding-3xl: 60px;
+
+  /* border radiuses */
+  --br-sm: 10px;
+  --br-md: 30px;
+}
+
+.manage-top1{
+  background-color: black;
+  background-image:    linear-gradient(143.9deg, rgba(76, 180, 173, 0.409) 10.68%, rgba(0, 0, 0, 0) 30.51%),
+  linear-gradient(41.54deg, rgba(250, 0, 0, 0.16) 20.05%, rgba(0, 0, 0, 0) 36.12%), 
+  linear-gradient(212.93deg, rgba(250, 0, 0, 0.379) 9.06%, rgba(255, 22, 78, 0) 30.97%),
+  linear-gradient(313.86deg, rgba(76, 180, 173, 0.286) 8.24%, rgba(167, 255, 192, 0) 54.52%) 
+ ;
+}
+
+#space{
+  height: 10px;
+}
+#label{
+  color: white;
+  font-family: 'Inter', sans-serif;
+  text-align: start;
+  font-size: 18px;
+}
+#input{
+  padding-top: 10px;
+  background: #242526;
+border: 0.4px solid #FFFFFF;
+backdrop-filter: blur(2px);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  padding: 20px;
+border-radius: 5px;
+}
+
+#sub {
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+#sub {
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  outline: none;
+  padding: 6px 19px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 200ms;
+
+}
+
+#sub:hover,
+#sub:focus {
+  background-color: #000000;
+  color: #ffffff;
+  border: 0.1px solid #FFFFFF;
+}
+
+#done{
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+}
+
+#title{
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.summa{
+  align-items: center;
+}
+
+.hom{
+  text-align: center;
+  width: 600px;
+  height: 200px;
+}
+
+  #team{
+      color: white;
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+  }

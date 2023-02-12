@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./spottube.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="spottube">
+      <div class="top-header2">
+        <header class="top-container2" id="nav">
+          <div class="logo3" id="logo">
+            <div class="frame-div">
+              <img class="vector-icon11" alt="" src="public/vector11.svg" />
+            </div>
+          </div>
+          <button class="icon2" autofocus id="icon">
+            <div class="icon-child3"></div>
+            <div class="icon-child4"></div>
+            <div class="icon-child5"></div>
+          </button>
+          <div class="navigation-right2">
+            <div class="nav-items2">
+              <button class="home3" id="home3"autofocus>Home</button
+              ><button class="tac-marizer2" autofocus id="tACMarizer">
+                TAC-Marizer</button
+              ><button class="contact4" autofocus id="contact">Contact</button>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="manage-top1">
+        <label for="fname" id="label">Input your Terms and Conditions </label><br>
+        <div id="space"></div>
+        <textarea style="height: 200px; width: 600px;" id="input" name="w3review" rows="4" cols="50" value="hello" type="text"></textarea>
+        <div id="space"></div>
+        <button id="sub">Submit</button>
+    <div id="status">
+    </div>
+    </div>
+
+    <div id="drawer" class="popup-overlay" style="display: none">
+      <div class="drawer" data-animate-on-scroll>
+        <div class="drawer-items" id="drawer">
+          <button class="home4" autofocus id="drawerhome">Home</button
+          ><button class="spottube1" autofocus id="drawerspottube">
+            Spottube</button
+          ><button class="contact5" autofocus id="drawercontact">
+            Contact
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var drawerhome = document.getElementById("drawerhome");
+      if (drawerhome) {
+        drawerhome.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      
+      var drawerspottube = document.getElementById("drawerspottube");
+      if (drawerspottube) {
+        drawerspottube.addEventListener("click", function (e) {
+          window.location.href = "./spottube.html";
+        });
+      }
+      
+      var drawercontact = document.getElementById("drawercontact");
+      if (drawercontact) {
+        drawercontact.addEventListener("click", function (e) {
+          window.location.href = "./contact.html";
+        });
+      }
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      
+      var icon = document.getElementById("icon");
+      if (icon) {
+        icon.addEventListener("click", function () {
+          var drawerOverlay = document.getElementById("drawer");
+          if (!drawerOverlay) return;
+          var drawerOverlayStyle = drawerOverlay.style;
+          if (drawerOverlayStyle) {
+            drawerOverlayStyle.display = "flex";
+            drawerOverlayStyle.zIndex = 99;
+            drawerOverlayStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            drawerOverlayStyle.alignItems = "center";
+            drawerOverlayStyle.justifyContent = "";
+          }
+          drawerOverlay.setAttribute("closable", "");
+      
+          var onClick =
+            drawerOverlay.onClick ||
+            function (e) {
+              if (
+                e.target === drawerOverlay &&
+                drawerOverlay.hasAttribute("closable")
+              ) {
+                drawerOverlayStyle.display = "none";
+              }
+            };
+          drawerOverlay.addEventListener("click", onClick);
+        });
+      }
+      
+      var tACMarizer = document.getElementById("tACMarizer");
+      if (tACMarizer) {
+        tACMarizer.addEventListener("click", function (e) {
+          window.location.href = "./spottube.html";
+        });
+      }
+      
+      var contact = document.getElementById("contact");
+      if (contact) {
+        contact.addEventListener("click", function (e) {
+          window.location.href = "./contact.html";
+        });
+      }
+
+      var hme = document.getElementById("home3");
+      if (hme) {
+        hme.addEventListener("click", function (e) {
+          window.location.href = "./index.html";
+        });
+      }
+     
+      </script>
+      <script src="script.js"></script>
+  </body>
+</html>
